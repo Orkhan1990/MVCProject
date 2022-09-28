@@ -1,0 +1,28 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "EditBlog";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Blogu Düzəltmək</h1>
+<br />
+@using (Html.BeginForm("EditBlog", "Blog", FormMethod.Post))
+{
+    @Html.Label("BlogId");
+    @Html.TextBoxFor(p => p.BlogID, new { @class = "form-control" });
+    <br />
+    @Html.Label("Blog Başlığı");
+    @Html.TextBoxFor(p => p.BlogTitle, new { @class = "form-control" });
+    <br />
+    @Html.Label("Blog Sekli");
+    @Html.TextBoxFor(p => p.BlogImage, new { @class = "form-control" });
+    <br />
+    @Html.Label("Blog Kateqoriyası");
+    @Html.DropDownListFor(p => p.CategoryID,(List<SelectListItem>)ViewBag.cv, new { @class = "form-control" });
+    <br />
+    @Html.Label("Blog Məzmunu");
+    @Html.TextBoxFor(p => p.BlogContent, new { @class = "form-control" });
+    <br />
+    <button class="btn btn-info">Düzəlt</button>
+}
+

@@ -1,0 +1,26 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "AddBlog";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Yeni Blog Yarat</h1>
+@using (Html.BeginForm("AddBlog", "Blog", FormMethod.Post))
+{
+    @Html.Label("Blog basligi")
+    @Html.TextBoxFor(p => p.BlogTitle, new { @class = "form-control" })
+    @Html.ValidationMessageFor(p => p.BlogTitle)
+    <br />
+    @Html.Label("Blog Sekili")
+    @Html.TextBoxFor(p => p.BlogImage, new { @class = "form-control" })
+    @Html.ValidationMessageFor(p => p.BlogImage)
+    <br />
+    @Html.Label("Kateqoriya")
+    @Html.DropDownListFor(p => p.CategoryID, (List<SelectListItem>)ViewBag.cv, new {@class="form-control"})
+    <br />
+    @Html.Label("Blogun Kontenti")
+    @Html.TextAreaFor(p => p.BlogContent, 10, 3, new { @class = "form-control" })
+    <br/>
+    <button class="btn btn-info">Yarat</button>
+}
+
