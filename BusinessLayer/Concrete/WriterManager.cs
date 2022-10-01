@@ -23,12 +23,21 @@ namespace BusinessLayer.Concrete
 
         public Writer GetById(int id)
         {
-            throw new NotImplementedException();
+            return _writerDal.GetById(id);
         }
 
         public IQueryable<Writer> GetListAll()
         {
             return _writerDal.GetListAll();
+        }
+
+        public List<Writer> GetListWriterById(int? id)
+        {
+            if (id==null)
+            {
+                throw new ArgumentNullException();
+            }
+            return _writerDal.GetListAll().Where(p => p.WriterID == id).ToList();
         }
 
         public void InsertT(Writer entity)
@@ -38,7 +47,7 @@ namespace BusinessLayer.Concrete
 
         public void UpdateT(Writer entity)
         {
-            throw new NotImplementedException();
+            _writerDal.Update(entity);
         }
     }
 }
