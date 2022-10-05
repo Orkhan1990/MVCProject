@@ -33,8 +33,15 @@ using EntitiesLayer.Concrete;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\Mr Orkhan\source\repos\CoreDemo\CoreDemo\Views\_ViewImports.cshtml"
+using CoreDemo.Models.Writer;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b62703f835d9d7095b8cf2b7faf9c2a8680f3e5d", @"/Views/ErrorPage/Error1.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"427f0e4697a7fb2e39e838fb03b34642621d13b2", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"aba6d76b1225ae13ab2af6aa923e23b37917f9a5", @"/Views/_ViewImports.cshtml")]
     public class Views_ErrorPage_Error1 : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("#"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -78,7 +85,7 @@ using EntitiesLayer.Concrete;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n\r\n<!--\r\nAuthor: W3layouts\r\nAuthor URL: http://w3layouts.com\r\n-->\r\n<!DOCTYPE html>\r\n<html lang=\"zxx\">\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b62703f835d9d7095b8cf2b7faf9c2a8680f3e5d5097", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b62703f835d9d7095b8cf2b7faf9c2a8680f3e5d5284", async() => {
                 WriteLiteral(@"
     <title>Bicycle Error Page Responsive Widget Template :: W3layouts</title>
     <!-- Meta tag Keywords -->
@@ -115,7 +122,7 @@ using EntitiesLayer.Concrete;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b62703f835d9d7095b8cf2b7faf9c2a8680f3e5d7073", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b62703f835d9d7095b8cf2b7faf9c2a8680f3e5d7260", async() => {
                 WriteLiteral(@"
     <section class=""w3l-error-61-404"">
         <!-- /error-61-section -->
@@ -127,7 +134,7 @@ using EntitiesLayer.Concrete;
 
                         <p>Oops! Səhifə tapılmadı</p>
                         ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b62703f835d9d7095b8cf2b7faf9c2a8680f3e5d7703", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b62703f835d9d7095b8cf2b7faf9c2a8680f3e5d7890", async() => {
                     WriteLiteral("\r\n                            <input type=\"search\" placeholder=\"Buradan axtar\" required=\"required\">\r\n                            <button type=\"submit\"><span class=\"fa fa-search\" aria-hidden=\"true\"></span></button>\r\n                        ");
                 }
                 );

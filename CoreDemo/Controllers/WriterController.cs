@@ -1,11 +1,13 @@
 ﻿using BusinessLayer.Abstract;
 using BusinessLayer.ValidationRules;
+using CoreDemo.Models.Writer;
 using EntitiesLayer.Concrete;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -61,6 +63,35 @@ namespace CoreDemo.Controllers
                 }
             }
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult AddWriter()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AddWriter(AddWriterImage entity)
+        {
+            Writer newWriter = new Writer(); 
+            if (entity.WriterImage!=null)
+            {
+
+                var extension = Path.GetExtension(entity.WriterImage.FileName);
+                var newImageName = Guid.NewGuid() + extension;
+                var location = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/WriterProfileImage/", newImageName);
+                var stream = new FileStream(location, FileMode.Create);
+                entity.WriterImage.CopyTo(stream);
+                newWriter.WriterImage = newImageName;
+            }
+            newWriter.WriterName = entity.WriterName;
+            newWriter.WriterAbout = entity.WriterAbout;
+            newWriter.WriterStatus = true;
+            newWriter.EmailAddress = entity.EmailAddress;
+            newWriter.Password = entity.Password;
+            _writerService.InsertT(newWriter);
+            return RedirectToAction("Index","Dashboard");
         }
     }
 }

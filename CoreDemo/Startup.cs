@@ -54,6 +54,9 @@ namespace CoreDemo
             services.AddScoped<IContactDal, EfContactRepository>();
             services.AddScoped<IContactService, ContactManager>();
 
+            services.AddScoped<INotificationDal, EfNotificationRepository>();
+            services.AddScoped<INotificationService,NotificationManager>();
+
             services.AddSession();
             services.AddMvc(p =>
             {
