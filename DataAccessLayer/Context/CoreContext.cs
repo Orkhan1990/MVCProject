@@ -12,7 +12,7 @@ namespace DataAccessLayer.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=ORKHANTALIBLI;database=CoreBlogDb;Integrated Security=true;");
+            optionsBuilder.UseSqlServer("server=localhost;database=CoreBlogDb;Integrated Security=true;");
         }
 
         public DbSet<About> Abouts { get; set; }
