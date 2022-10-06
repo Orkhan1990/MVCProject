@@ -34,3 +34,21 @@ C:\Users\User\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\refint\DataAcc
 C:\Users\User\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
 C:\Users\User\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.genruntimeconfig.cache
 C:\Users\User\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.deps.json
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.runtimeconfig.json
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.dll
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\bin\Debug\net5.0\ref\DataAccessLayer.dll
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\bin\Debug\net5.0\EntitiesLayer.dll
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\bin\Debug\net5.0\EntitiesLayer.pdb
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.dll
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
+C:\Users\Mr Orkhan\Desktop\MVCProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.genruntimeconfig.cache

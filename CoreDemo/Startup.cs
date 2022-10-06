@@ -1,5 +1,6 @@
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
+using CoreDemo.Services;
 using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -32,31 +33,7 @@ namespace CoreDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-          
-            services.AddScoped<ICategoryDal, EfCategoryRepository>();
-            services.AddScoped<ICategorService, CategoryManager>();
-
-            services.AddScoped<IBlogDal, EfBlogRepository>();
-            services.AddScoped<IBlogService, BlogManager>();
-
-            services.AddScoped<ICommentDal, EfCommentRepository>();
-            services.AddScoped<ICommentService, CommentManager>();
-
-            services.AddScoped<IWriterDal,EfWriterRepository>();
-            services.AddScoped<IWriterService, WriterManager>();
-
-            services.AddScoped<INewsLetterDal, EfNewsLetterRepository>();
-            services.AddScoped<INewsLetterService, NewsLetterManager>();
-
-            services.AddScoped<IAboutDal, EfAboutRepository>();
-            services.AddScoped<IAboutService, AboutManager>();
-
-            services.AddScoped<IContactDal, EfContactRepository>();
-            services.AddScoped<IContactService, ContactManager>();
-
-            services.AddScoped<INotificationDal, EfNotificationRepository>();
-            services.AddScoped<INotificationService,NotificationManager>();
-
+            ServicesConfig.ServiceConfiguration(services);
             services.AddSession();
             services.AddMvc(p =>
             {
