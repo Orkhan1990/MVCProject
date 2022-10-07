@@ -17,6 +17,8 @@ namespace EntitiesLayer.Concrete
         public string Password { get; set; }
 
         public List<Blog> Blogs { get; set; }
+        public virtual ICollection<Message> SenderMesage { get; set; }
+        public virtual ICollection<Message> ReceiverMessage { get; set; }
 
 
     }

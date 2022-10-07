@@ -26,6 +26,22 @@ namespace DataAccessLayer.Context
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<Message> Messages { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Message>()
+                .HasOne(p => p.Receiver)
+                .WithMany(p => p.ReceiverMessage)
+                .HasForeignKey(p => p.ReceiverId)
+                .OnDelete(DeleteBehavior.ClientSetNull);
+
+            modelBuilder.Entity<Message>()
+               .HasOne(p => p.Sender)
+               .WithMany(p => p.SenderMesage)
+               .HasForeignKey(p => p.SenderId)
+               .OnDelete(DeleteBehavior.ClientSetNull);
+
+        }
+
 
 
     }

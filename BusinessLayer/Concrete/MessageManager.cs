@@ -2,6 +2,7 @@
 using DataAccessLayer.Abstract;
 using EntitiesLayer.Concrete;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace BusinessLayer.Concrete
@@ -28,10 +29,6 @@ namespace BusinessLayer.Concrete
             return _messageDal.GetListAll();
         }
 
-        public IQueryable<Message> GetMessageFromReceiver(string message)
-        {
-            return _messageDal.GetListAll(p => p.Receiver == message);
-        }
 
         public void InsertT(Message entity)
         {
@@ -41,6 +38,11 @@ namespace BusinessLayer.Concrete
         public void UpdateT(Message entity)
         {
             _messageDal.Update(entity);
+        }
+
+        IList<Message> IMessageService.GetMessageFromSender(int id)
+        {
+            return _messageDal.GetListSenderMessage(id);
         }
     }
 }

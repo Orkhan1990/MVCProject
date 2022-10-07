@@ -9,6 +9,6 @@ namespace BusinessLayer.Abstract
 {
    public interface IMessageService:IGenericService<Message>
     {
-        IQueryable<Message> GetMessageFromReceiver(string message);
+        IList<Message> GetMessageFromSender(int id);
     }
 }

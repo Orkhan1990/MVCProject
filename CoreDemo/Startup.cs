@@ -34,6 +34,11 @@ namespace CoreDemo
         {
             services.AddControllersWithViews();
             ServicesConfig.ServiceConfiguration(services);
+            services.AddScoped<INotificationDal, EfNotificationRepository>();
+            services.AddScoped<INotificationService, NotificationManager>();
+
+            services.AddScoped<IMessageDal, EfMessageRepository>();
+            services.AddScoped<IMessageService, MessageManager>();
             services.AddSession();
             services.AddMvc(p =>
             {
