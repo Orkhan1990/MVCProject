@@ -20,8 +20,11 @@ namespace CoreDemo.Controllers
         {
             _writerService = writerService;
         }
+        [Authorize]
         public IActionResult Index()
         {
+            var usermail = User.Identity.Name;
+            ViewBag.v = usermail;
             return View();
         }
 

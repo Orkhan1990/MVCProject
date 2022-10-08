@@ -36,11 +36,11 @@ namespace CoreDemo.Services
             services.AddScoped<IContactDal, EfContactRepository>();
             services.AddScoped<IContactService, ContactManager>();
 
-            //services.AddScoped<INotificationDal, EfNotificationRepository>();
-            //services.AddScoped<INotificationService, NotificationManager>();
+            services.AddScoped<INotificationDal, EfNotificationRepository>();
+            services.AddScoped<INotificationService, NotificationManager>();
 
-            //services.AddScoped<IMessageDal, EfMessageRepository>();
-            //services.AddScoped<IMessageService, MessageManager>();
+            services.AddScoped<IMessageDal, EfMessageRepository>();
+            services.AddScoped<IMessageService, MessageManager>();
         }
     }
 }

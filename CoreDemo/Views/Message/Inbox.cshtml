@@ -1,0 +1,27 @@
+﻿@model IList<Message>
+@{
+    ViewData["Title"] = "Inbox";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Mesajlar</h1>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Mövzu</th>
+        <th>Göndərən</th>
+        <th>Tarix</th>
+        <th>Mesajı aç</th>
+    </tr>
+   @foreach (var item in Model)
+   {
+       <tr>
+           <td>@item.Id</td>
+           <td>@item.MessageDetails</td>
+           <td>@item.Sender.WriterName</td>
+           <td>@item.MessageDate.ToShortDateString()</td>
+           <td><a href="/Message/Details/@item.Id" class="btn btn-info">Mesajı aç</a></td>
+       </tr>
+   }
+</table>
+

@@ -562,3 +562,8 @@ C:\Users\Mr Orkhan\Desktop\MVCProject\CoreDemo\obj\Debug\net5.0\CoreDemo.dll
 C:\Users\Mr Orkhan\Desktop\MVCProject\CoreDemo\obj\Debug\net5.0\ref\CoreDemo.dll
 C:\Users\Mr Orkhan\Desktop\MVCProject\CoreDemo\obj\Debug\net5.0\CoreDemo.pdb
 C:\Users\Mr Orkhan\Desktop\MVCProject\CoreDemo\obj\Debug\net5.0\CoreDemo.genruntimeconfig.cache
+C:\Users\Mr Orkhan\Desktop\MVCProject\CoreDemo\obj\Debug\net5.0\Razor\Views\Message\Inbox.cshtml.g.cs
+C:\Users\Mr Orkhan\Desktop\MVCProject\CoreDemo\obj\Debug\net5.0\Razor\Views\Message\Details.cshtml.g.cs
+C:\Users\Mr Orkhan\Desktop\MVCProject\CoreDemo\obj\Debug\net5.0\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Mr Orkhan\Desktop\MVCProject\CoreDemo\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\Mr Orkhan\Desktop\MVCProject\CoreDemo\obj\Debug\net5.0\Razor\Views\Admin\AdminNavbarPartial.cshtml.g.cs
